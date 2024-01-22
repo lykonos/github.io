@@ -1,0 +1,156 @@
+/* Base styles */
+body, h1, h2, p, nav {
+    margin: 0;
+    padding: 0;
+    font-family: 'Helvetica Neue', Arial, sans-serif; /* Standard font across the website */
+    font-size: 1rem; /* Base font size for consistency */
+}
+
+/* Container */
+.container {
+    max-width: 95%;
+    margin: auto;
+    padding: 20px;
+}
+
+/* Header */
+.site-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+    background-color: #ffffff;
+}
+
+/* Branding styles */
+.branding {
+    display: flex;
+    align-items: center;
+}
+
+.logo-circle {
+    width: 50px; /* Adjust size as needed */
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 10px; /* Adds spacing between logo and blog name */
+}
+
+.blog-name {
+    font-size: 1.5rem; /* Adjust size as needed */
+    font-weight: bold; /* Makes the blog name bold */
+}
+
+/* Navigation */
+.site-navigation {
+    display: flex;
+    align-items: center;
+}
+
+.site-navigation a {
+    color: #000000;
+    text-decoration: none;
+    padding: 10px 15px;
+    margin-left: 20px; /* Adds spacing between navigation items */
+}
+
+.site-navigation a:hover,
+.site-navigation a:focus {
+    text-decoration: underline;
+}
+
+/* Main Content */
+.main-content {
+    display: grid;
+    grid-template-columns: 3fr 1fr; /* Three parts main content, one part sidebar */
+    gap: 20px;
+}
+
+.interview-article {
+    width: 100%; /* Flexibility for grid scaling */
+}
+
+.interview-article h1 {
+    font-size: 2rem; /* Adjusted for header */
+    color: #000000;
+    margin-bottom: 0.2em;
+}
+
+.article-meta, .author-date {
+    color: #333; /* Darker grey for improved readability */
+    font-size: 0.9em;
+    margin-bottom: 0.75em; /* Adjusted whitespace for better visual separation */
+}
+
+.article-image-container {
+    margin: 2em 0;
+    overflow: hidden; /* Ensures no overflow if images are larger than their container */
+}
+
+.article-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+
+/* Sidebar */
+.site-sidebar {
+    width: 100%; /* For grid scaling */
+    margin-top: 2em;
+}
+
+.site-sidebar h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1.5em;
+}
+
+.site-sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.site-sidebar li {
+    margin-bottom: 0.5em;
+    font-size: 1em;
+}
+
+.site-sidebar li a {
+    text-decoration: none;
+}
+
+/* Footer */
+.site-footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #f8f8f8;
+    border-top: 1px solid #e5e5e5;
+}
+
+.site-footer p {
+    color: #666;
+    font-size: 0.75em;
+}
+
+/* Responsive Design Adjustments */
+@media (max-width: 768px) {
+    .site-header,
+    .site-navigation,
+    .main-content,
+    .site-sidebar,
+    .site-footer {
+        flex-direction: column;
+        width: 100%;
+        padding: 20px;
+    }
+
+    .site-navigation a {
+        margin-left: 0; /* Adjusts the navigation link margin for smaller screens */
+        padding: 10px 0; /* Adds vertical padding for tap targets */
+    }
+
+    .branding,
+    .main-content,
+    .site-sidebar {
+        width: 100%; /* Ensures full width on small screens */
+    }
+}
