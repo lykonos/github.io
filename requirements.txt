@@ -1,4 +1,3 @@
-handcalcs
 numpy
 pandas
 matplotlib
