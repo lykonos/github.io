@@ -1,1 +1,16 @@
 handcalcs
+numpy
+pandas
+matplotlib
+seaborn
+scipy
+sympy
+scikit-learn
+statsmodels
+ipywidgets
+plotly
+dash
+xlrd
+xlwt
+handcalcs
+jupyterlab-git
