@@ -13,3 +13,4 @@ xlrd
 xlwt
 handcalcs
 jupyterlab-git
+forallpeople
